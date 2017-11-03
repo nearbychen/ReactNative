@@ -21,7 +21,7 @@ const instructions = Platform.select({
 });
 const pixelRatio = PixelRatio.get();
 
-export default class App extends Component<{}> {
+export default class Loginleaf extends Component<{}> {
   static myStaticObject = 'init value';
   static myStaticMethod() {
     console.log('myStaticMethod is called');
