@@ -7,8 +7,27 @@
 		"test": "jest"
 	},
 	"dependencies": {
+		"antd-mobile": "^2.0.2",
+		"axios": "^0.17.0",
 		"react": "16.0.0-beta.5",
-		"react-native": "0.49.5"
+		"react-dom": "^16.0.0",
+		"react-native": "^0.50.0",
+		"react-native-audio": "^3.5.0",
+		"react-native-deprecated-custom-components": "^0.1.1",
+		"react-native-drawer": "^2.5.0",
+		"react-native-push-notification": "^3.0.1",
+		"react-native-router-flux": "^4.0.0-beta.22",
+		"react-native-sound": "^0.10.4",
+		"react-native-vector-icons": "^4.4.2",
+		"react-navigation": "^1.0.0-beta.19",
+		"react-redux": "^5.0.6",
+		"redux": "^3.7.2",
+		"redux-logger": "^3.0.6",
+		"redux-persist": "^5.2.2",
+		"redux-saga": "^0.16.0",
+		"redux-thunk": "^2.2.0",
+		"reduxsauce": "^0.7.0",
+		"seamless-immutable": "^7.1.2"
 	},
 	"devDependencies": {
 		"babel-jest": "21.2.0",
