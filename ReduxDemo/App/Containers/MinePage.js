@@ -32,7 +32,7 @@ class MinePage extends Component{
                 <Button
                   style={{padding:20}}
                     onPress={() =>
-                        this.props.navigation.navigate({ routeName: 'Find'})
+                        this.props.navigation.navigate('Find')
                         // this.props.navigation.navigate('DrawerToggle')
                     
                     }

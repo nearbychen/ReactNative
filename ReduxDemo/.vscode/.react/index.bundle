@@ -52050,6 +52050,8 @@ var TabNavigatorConfigs = {
     initialRouteName: 'Home',
     tabBarComponent: _reactNavigation.TabBarBottom,
     tabBarPosition: 'bottom',
+    swipeEnabled: true,
+    animationEnabled: true,
     lazy: true,
     tabBarOptions: {}
 };
@@ -61962,7 +61964,7 @@ var MinePage = _wrapComponent('MinePage')((_temp = _class = function (_Component
                 _react3.default.createElement(_reactNative.Button, {
                     style: { padding: 20 },
                     onPress: function onPress() {
-                        return _this2.props.navigation.navigate({ routeName: 'Find' });
+                        return _this2.props.navigation.navigate('Find');
                     },
                     title: '\u70B9\u51FB\u6253\u5F00\u4FA7\u6ED1\u83DC\u5355',
                     __source: {

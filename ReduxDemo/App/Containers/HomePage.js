@@ -79,6 +79,8 @@ const TabNavigatorConfigs = {
     initialRouteName: 'Home',
     tabBarComponent: TabBarBottom,
     tabBarPosition: 'bottom',
+    swipeEnabled: true,
+    animationEnabled: true,
     lazy: true,
     tabBarOptions: {}
 };
