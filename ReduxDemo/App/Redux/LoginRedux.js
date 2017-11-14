@@ -8,7 +8,7 @@ import {Actions as NavigationActions} from 'react-native-router-flux'
 
 /* ------------- Types and Action Creators ------------- */
 
-var url = "http://localhost:8080/WebServlet/LoginServlet";
+var url = "http://192.168.1.51:8080/WebServlet/LoginServlet";
 
 const {Types, Creators} = createActions({
   loginRequest: ['username', 'password'],
@@ -70,12 +70,13 @@ const {Types, Creators} = createActions({
           .then((response) => {
               return response.text();
           })
-          .then((responseText) => {
+        .then((responseText) => {
+          NavigationActions.contacts();
             dispatch(Creators.loginSuccess(responseText))
               // alert(responseText);
           })
           .catch((error) => {
-            // dispatch(Creators.loginFailure(error))
+            dispatch(Creators.loginFailure(error))
               alert(error)
         })
       

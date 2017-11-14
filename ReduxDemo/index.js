@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App/Containers/App';
+import HomePage from './App/Containers/HomePage';
 
-AppRegistry.registerComponent('ReduxDemo', () => App);
+AppRegistry.registerComponent('ReduxDemo', () => HomePage);

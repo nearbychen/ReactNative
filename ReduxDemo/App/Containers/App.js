@@ -4,7 +4,7 @@ import React, {Component} from 'react'
 import {Provider, connect} from 'react-redux'
 import { Alert, View } from 'react-native'
 import createStore from '../Redux'
-// import RootContainer from './RootContainer'
+import RootContainer from './RootContainer'
 import LoginScreen from './LoginScreen'
 // import LoadingContent from '../Containers/LoadingContent'
 // import createStore from '../Redux'
@@ -23,7 +23,7 @@ import LoginScreen from './LoginScreen'
 // import {Actions as NavigationActions} from 'react-native-router-flux'
 // import axios from 'axios'
 
-const RouterWithRedux = connect()(LoginScreen);
+const RouterWithRedux = connect()(RootContainer);
 
 // Apply config overrides
 // applyConfigSettings()
@@ -54,7 +54,7 @@ class App extends Component {
     return (
     
     <Provider store={store}>
-        <RouterWithRedux />
+        <RootContainer />
       </Provider>  
     )
   }
